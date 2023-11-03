@@ -17,7 +17,7 @@ const AddExpenseForm = () => {
       cost: parseInt(cost),
     };
 
-    if (Number.isInteger(cost) === false) {
+    if (Number.isInteger(parseInt(cost)) === false) {
       alert("Please enter a valid whole number");
     } else {
       dispatch({
