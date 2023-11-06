@@ -11,7 +11,14 @@ const App = () => {
   return (
     <AppProvider>
       <div className="container">
-        <h1 className="mt-3">My Piggy Bank</h1>
+        <div className="text-center">
+          <img src={process.env.PUBLIC_URL + '/Piggy.png'} alt="piggy bank" width="300" height="300" />
+          <h1 className="mt-3">My Piggy Bank</h1>
+        </div>
+        <div id="el">
+            <span id="needle"></span>
+        </div>
+        <strong>Almost There!</strong>
         <div className="row mt-3">
           <div className="col-sm">
             <Budget />
@@ -34,6 +41,15 @@ const App = () => {
           <div className="col-sm">
             <AddExpenseForm />
           </div>
+        </div>
+        <div class="bouncyBalls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
         </div>
       </div>
     </AppProvider>
